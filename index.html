@@ -6,10 +6,18 @@
     <title>Document</title>
 </head>
 <body>
-@supports মিডিয়া কোয়েরি (blend-mode সাপোর্ট)<br/>
+<p> @supports মিডিয়া কোয়েরি (blend-mode সাপোর্ট)<br/>
 @supports (mix-blend-mode: exclusion) { .cb-cursor.-exclusion, .cb-cursor.-opaque { mix-blend-mode: exclusion; } }<br/>
 যদি ব্রাউজার mix-blend-mode: exclusion সাপোর্ট করে, তাহলে .-exclusion এবং .-opaque ক্লাসে এটি অ্যাপ্লাই হয়। এটি কার্সরকে ব্যাকগ্রাউন্ডের সাথে মিশিয়ে দেয় (exclusion মোডে, যা কনট্রাস্ট তৈরি করে)। <br/>
 @supports (mix-blend-mode: exclusion) { .cb-cursor.-exclusion:before, .cb-cursor.-opaque:before { background: white; } }<br/>
 একইভাবে, :before-এর ব্যাকগ্রাউন্ড সাদা করে।
+</p>
+<p>
+    mix-blend-mode: normal; হলো CSS-এর একটি প্রপার্টি যা কোনো এলিমেন্টের ব্লেন্ডিং মোড নির্ধারণ করে, অর্থাৎ এটি নির্দেশ করে যে কীভাবে <br/>
+    একটি এলিমেন্টের কন্টেন্ট তার পেছনের এলিমেন্ট বা ব্যাকগ্রাউন্ডের সাথে মিশবে। যখন mix-blend-mode এর মান normal সেট করা হয়, <br/>
+    তখন কোনো বিশেষ ব্লেন্ডিং ইফেক্ট প্রয়োগ হয় না। এলিমেন্টটি তার স্বাভাবিক অবস্থায় দেখায়, অর্থাৎ এটি পেছনের কন্টেন্টের সাথে কোনো <br/>
+    রঙ বা ভিজ্যুয়াল মিশ্রণ ছাড়াই প্রদর্শিত হয়।
+</p>
 </body>
 </html>
+
